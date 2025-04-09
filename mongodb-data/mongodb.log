@@ -1,0 +1,113 @@
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] MongoDB starting : pid=26750 port=27017 dbpath=/workspaces/congenial-sniffle/mongodb-data 64-bit host=codespaces-d49d6e
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] db version v3.6.8
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] git version: 8e540c0b6db93ce994cc548f000900bdc740f80a
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1f  31 Mar 2020
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] allocator: tcmalloc
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] modules: none
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] build environment:
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten]     distarch: x86_64
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten]     target_arch: x86_64
+2025-04-08T23:04:42.825+0000 I CONTROL  [initandlisten] options: { processManagement: { fork: true }, storage: { dbPath: "/workspaces/congenial-sniffle/mongodb-data" }, systemLog: { destination: "file", path: "/workspaces/congenial-sniffle/mongodb-data/mongodb.log" } }
+2025-04-08T23:04:42.825+0000 I STORAGE  [initandlisten] 
+2025-04-08T23:04:42.825+0000 I STORAGE  [initandlisten] ** WARNING: Using the XFS filesystem is strongly recommended with the WiredTiger storage engine
+2025-04-08T23:04:42.825+0000 I STORAGE  [initandlisten] **          See http://dochub.mongodb.org/core/prodnotes-filesystem
+2025-04-08T23:04:42.825+0000 I STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=7483M,session_max=20000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),cache_cursors=false,compatibility=(release="3.0",require_max="3.0"),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000),statistics_log=(wait=0),verbose=(recovery_progress),
+2025-04-08T23:04:43.036+0000 I STORAGE  [initandlisten] WiredTiger message [1744153483:36143][26750:0x75bff427dac0], txn-recover: Set global recovery timestamp: 0
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] 
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] 
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] ** WARNING: This server is bound to localhost.
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **          Remote systems will be unable to connect to this server. 
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **          Start the server with --bind_ip <address> to specify which IP 
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **          addresses it should serve responses from, or with --bind_ip_all to
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **          bind to all interfaces. If this behavior is desired, start the
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **          server with --bind_ip 127.0.0.1 to disable this warning.
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] 
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] 
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] ** WARNING: /sys/kernel/mm/transparent_hugepage/enabled is 'always'.
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] **        We suggest setting it to 'never'
+2025-04-08T23:04:43.054+0000 I CONTROL  [initandlisten] 
+2025-04-08T23:04:43.055+0000 I STORAGE  [initandlisten] createCollection: admin.system.version with provided UUID: ca74bfb1-9e60-4efc-8c39-1648d0ee7737
+2025-04-08T23:04:43.063+0000 I COMMAND  [initandlisten] setting featureCompatibilityVersion to 3.6
+2025-04-08T23:04:43.067+0000 I STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: 664d98ed-a5fd-47be-b223-84d50d800ba1
+2025-04-08T23:04:43.072+0000 I FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/workspaces/congenial-sniffle/mongodb-data/diagnostic.data'
+2025-04-08T23:04:43.072+0000 I STORAGE  [LogicalSessionCacheRefresh] createCollection: config.system.sessions with generated UUID: 049fe2f5-f700-48e6-8dad-4c528894f56d
+2025-04-08T23:04:43.072+0000 I NETWORK  [initandlisten] waiting for connections on port 27017
+2025-04-08T23:04:43.084+0000 I INDEX    [LogicalSessionCacheRefresh] build index on: config.system.sessions properties: { v: 2, key: { lastUse: 1 }, name: "lsidTTLIndex", ns: "config.system.sessions", expireAfterSeconds: 1800 }
+2025-04-08T23:04:43.084+0000 I INDEX    [LogicalSessionCacheRefresh] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T23:04:43.085+0000 I INDEX    [LogicalSessionCacheRefresh] build index done.  scanned 0 total records. 0 secs
+2025-04-08T23:04:49.753+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53622 #1 (1 connection now open)
+2025-04-08T23:04:49.753+0000 I NETWORK  [conn1] received client metadata from 127.0.0.1:53622 conn1: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-08T23:04:49.756+0000 I NETWORK  [conn1] end connection 127.0.0.1:53622 (0 connections now open)
+2025-04-08T23:04:57.132+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53624 #2 (1 connection now open)
+2025-04-08T23:04:57.133+0000 I NETWORK  [conn2] received client metadata from 127.0.0.1:53624 conn2: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-08T23:04:57.135+0000 I NETWORK  [conn2] end connection 127.0.0.1:53624 (0 connections now open)
+2025-04-08T23:05:05.857+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:33488 #3 (1 connection now open)
+2025-04-08T23:05:05.857+0000 I NETWORK  [conn3] received client metadata from 127.0.0.1:33488 conn3: { application: { name: "MongoDB Shell" }, driver: { name: "MongoDB Internal Client", version: "3.6.8" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "20.04" } }
+2025-04-08T23:05:05.859+0000 I NETWORK  [conn3] end connection 127.0.0.1:33488 (0 connections now open)
+2025-04-08T23:08:25.979+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39114 #4 (1 connection now open)
+2025-04-08T23:08:25.979+0000 I NETWORK  [conn4] received client metadata from 127.0.0.1:39114 conn4: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:08:25.980+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39126 #5 (2 connections now open)
+2025-04-08T23:08:25.980+0000 I NETWORK  [conn5] received client metadata from 127.0.0.1:39126 conn5: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:08:25.985+0000 I NETWORK  [conn4] end connection 127.0.0.1:39114 (1 connection now open)
+2025-04-08T23:08:25.985+0000 I NETWORK  [conn5] end connection 127.0.0.1:39126 (0 connections now open)
+2025-04-08T23:08:26.840+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39134 #6 (1 connection now open)
+2025-04-08T23:08:26.840+0000 I NETWORK  [conn6] received client metadata from 127.0.0.1:39134 conn6: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:08:26.841+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39136 #7 (2 connections now open)
+2025-04-08T23:08:26.841+0000 I NETWORK  [conn7] received client metadata from 127.0.0.1:39136 conn7: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:08:26.852+0000 I STORAGE  [conn7] createCollection: octofit_db.__schema__ with generated UUID: 515a9122-81ab-4d0d-8165-978063ebef08
+2025-04-08T23:08:26.869+0000 I INDEX    [conn7] build index on: octofit_db.__schema__ properties: { v: 2, unique: true, key: { name: 1 }, name: "name_1", ns: "octofit_db.__schema__" }
+2025-04-08T23:08:26.869+0000 I INDEX    [conn7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T23:08:26.870+0000 I INDEX    [conn7] build index done.  scanned 0 total records. 0 secs
+2025-04-08T23:08:26.874+0000 I INDEX    [conn7] build index on: octofit_db.__schema__ properties: { v: 2, key: { auto: 1 }, name: "auto_1", ns: "octofit_db.__schema__" }
+2025-04-08T23:08:26.874+0000 I INDEX    [conn7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T23:08:26.875+0000 I INDEX    [conn7] build index done.  scanned 0 total records. 0 secs
+2025-04-08T23:08:26.875+0000 I STORAGE  [conn7] createCollection: octofit_db.django_migrations with generated UUID: 842463a6-3b08-46ab-8b25-cdafa5b47be7
+2025-04-08T23:08:26.888+0000 I INDEX    [conn7] build index on: octofit_db.django_migrations properties: { v: 2, unique: true, key: { id: 1 }, name: "__primary_key__", ns: "octofit_db.django_migrations" }
+2025-04-08T23:08:26.888+0000 I INDEX    [conn7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T23:08:26.888+0000 I INDEX    [conn7] build index done.  scanned 0 total records. 0 secs
+2025-04-08T23:08:26.893+0000 I STORAGE  [conn7] createCollection: octofit_db.django_content_type with generated UUID: 8bed7fc3-3f22-4592-b85b-ac71cd545ba1
+2025-04-08T23:08:26.905+0000 I INDEX    [conn7] build index on: octofit_db.django_content_type properties: { v: 2, unique: true, key: { id: 1 }, name: "__primary_key__", ns: "octofit_db.django_content_type" }
+2025-04-08T23:08:26.905+0000 I INDEX    [conn7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T23:08:26.906+0000 I INDEX    [conn7] build index done.  scanned 0 total records. 0 secs
+2025-04-08T23:08:26.914+0000 I INDEX    [conn7] build index on: octofit_db.django_content_type properties: { v: 2, unique: true, key: { app_label: 1, model: 1 }, name: "django_content_type_app_label_model_76bd3d3b_uniq", ns: "octofit_db.django_content_type" }
+2025-04-08T23:08:26.914+0000 I INDEX    [conn7] 	 building index using bulk method; build may temporarily use up to 500 megabytes of RAM
+2025-04-08T23:08:26.915+0000 I INDEX    [conn7] build index done.  scanned 0 total records. 0 secs
+2025-04-08T23:08:26.919+0000 I NETWORK  [conn7] end connection 127.0.0.1:39136 (1 connection now open)
+2025-04-08T23:08:26.919+0000 I NETWORK  [conn6] end connection 127.0.0.1:39134 (0 connections now open)
+2025-04-08T23:09:33.048+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:54098 #8 (1 connection now open)
+2025-04-08T23:09:33.048+0000 I NETWORK  [conn8] received client metadata from 127.0.0.1:54098 conn8: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:09:33.573+0000 I NETWORK  [conn8] end connection 127.0.0.1:54098 (0 connections now open)
+2025-04-08T23:09:49.409+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53202 #9 (1 connection now open)
+2025-04-08T23:09:49.410+0000 I NETWORK  [conn9] received client metadata from 127.0.0.1:53202 conn9: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:09:49.940+0000 I NETWORK  [conn9] end connection 127.0.0.1:53202 (0 connections now open)
+2025-04-08T23:10:07.542+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:43148 #10 (1 connection now open)
+2025-04-08T23:10:07.542+0000 I NETWORK  [conn10] received client metadata from 127.0.0.1:43148 conn10: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:10:08.072+0000 I NETWORK  [conn10] end connection 127.0.0.1:43148 (0 connections now open)
+2025-04-08T23:10:25.353+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53100 #11 (1 connection now open)
+2025-04-08T23:10:25.354+0000 I NETWORK  [conn11] received client metadata from 127.0.0.1:53100 conn11: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:10:25.412+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:53112 #12 (2 connections now open)
+2025-04-08T23:10:25.413+0000 I NETWORK  [conn12] received client metadata from 127.0.0.1:53112 conn12: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-08T23:10:25.414+0000 I STORAGE  [conn12] createCollection: octofit_db.users with generated UUID: 057a7d68-74f1-4920-b58b-e02adab3a6e5
+2025-04-08T23:10:25.422+0000 I STORAGE  [conn12] createCollection: octofit_db.teams with generated UUID: ff48470e-cc6c-4c83-839e-943dd5b1d125
+2025-04-08T23:10:25.429+0000 I STORAGE  [conn12] createCollection: octofit_db.activities with generated UUID: 9b68a1f3-d62a-47a8-b7d6-cde841ac1635
+2025-04-08T23:10:25.437+0000 I STORAGE  [conn12] createCollection: octofit_db.leaderboard with generated UUID: 45121c62-04cb-44fb-a14d-cbc13c669512
+2025-04-08T23:10:25.444+0000 I STORAGE  [conn12] createCollection: octofit_db.workouts with generated UUID: 1d64ec64-3d96-4b4c-b87b-c0769891cef5
+2025-04-08T23:10:25.887+0000 I NETWORK  [conn12] end connection 127.0.0.1:53112 (1 connection now open)
+2025-04-08T23:10:25.887+0000 I NETWORK  [conn11] end connection 127.0.0.1:53100 (0 connections now open)
+2025-04-09T00:00:21.625+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49996 #13 (1 connection now open)
+2025-04-09T00:00:21.626+0000 I NETWORK  [conn13] received client metadata from 127.0.0.1:49996 conn13: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-09T00:00:21.989+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:49998 #14 (2 connections now open)
+2025-04-09T00:00:21.990+0000 I NETWORK  [conn14] received client metadata from 127.0.0.1:49998 conn14: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-09T00:02:49.609+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38606 #15 (3 connections now open)
+2025-04-09T00:02:49.609+0000 I NETWORK  [conn15] received client metadata from 127.0.0.1:38606 conn15: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-09T00:02:50.494+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:38622 #16 (4 connections now open)
+2025-04-09T00:02:50.495+0000 I NETWORK  [conn16] received client metadata from 127.0.0.1:38622 conn16: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-09T00:03:52.597+0000 I NETWORK  [conn14] end connection 127.0.0.1:49998 (3 connections now open)
+2025-04-09T00:03:52.973+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39028 #17 (4 connections now open)
+2025-04-09T00:03:52.975+0000 I NETWORK  [conn17] received client metadata from 127.0.0.1:39028 conn17: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-09T00:03:53.075+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39040 #18 (5 connections now open)
+2025-04-09T00:03:53.075+0000 I NETWORK  [conn18] received client metadata from 127.0.0.1:39040 conn18: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
+2025-04-09T00:03:53.076+0000 I NETWORK  [listener] connection accepted from 127.0.0.1:39056 #19 (6 connections now open)
+2025-04-09T00:03:53.076+0000 I NETWORK  [conn19] received client metadata from 127.0.0.1:39056 conn19: { driver: { name: "PyMongo", version: "3.11.4" }, os: { type: "Linux", name: "Linux", architecture: "x86_64", version: "6.8.0-1021-azure" }, platform: "CPython 3.12.1.final.0" }
